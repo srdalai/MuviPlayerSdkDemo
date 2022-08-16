@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerDemoActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSelectFile"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Click to Play"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_color"
+        android:visibility="gone"
+        app:backgroundTint="@color/button_background"
+        app:cornerRadius="20dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_marginHorizontal="20dp"
+        android:divider="@color/transparent"
+        android:listSelector="@drawable/muvi_new_options_item_bg"
+        android:paddingVertical="20dp"
+        android:scrollbars="none" />
+
+</FrameLayout>

@@ -1,0 +1,3 @@
+rootProject.name = "TVOD API SDK"
+include ':app'
+include ':tv_playersdk'

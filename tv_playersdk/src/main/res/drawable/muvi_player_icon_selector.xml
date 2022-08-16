@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true" android:drawable="@drawable/player_icon_bg">
+        <!--<shape android:shape="rectangle">
+            <solid android:color="#77FFFFFF"/>
+            <corners android:radius="@dimen/muvi_player_icon_radius"/>
+        </shape>-->
+    </item>
+    <item android:drawable="@android:color/transparent"/>
+
+</selector>

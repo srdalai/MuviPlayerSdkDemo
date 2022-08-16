@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Strings-->
+    <string name="track_selection_title">Select tracks</string>
+
+    <!--Colors-->
+    <color name="muvi_player_progress_color">#C9FF0000</color>
+    <color name="muvi_player_played_color">#C9FF0000</color>
+    <color name="muvi_player_buffered_color">#8DFFFFFF</color>
+    <color name="muvi_player_un_played_color">#40FFFFFF</color>
+    <color name="muvi_player_subtitle_bg_color">#63000000</color>
+    <color name="muvi_player_live_color">#F44336</color>
+
+    <!--Dimensions-->
+    <dimen name="muvi_player_icon_size">48dp</dimen>
+    <dimen name="muvi_player_icon_radius">24dp</dimen>
+
+    <!--Booleans-->
+    <bool name="muvi_player_show_debug_info">true</bool>
+    <bool name="muvi_player_allow_exceeds_capabilities">false</bool>
+
+    <!--Themes-->
+    <style name="MuviPlayer_FullScreen_Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="TrackSelectionDialogThemeOverlay" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <!--Attributes-->
+    <declare-styleable name="MuviPlayerView">
+        <!--<attr name="titleText" format="string" localization="suggested" />
+        <attr name="textColor" format="color" />
+        <attr name="iconHeight" format="dimension" localization="suggested" />
+        <attr name="iconHeightInt" format="integer" localization="suggested" />
+        <attr name="iconDrawable" format="reference" />-->
+        <attr name="showLoader" format="boolean" />
+    </declare-styleable>
+</resources>

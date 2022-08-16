@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    tools:context=".views.NewOptionsFragment">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="#85000000">
+
+        <ImageView
+            android:id="@+id/imageViewAction"
+            android:layout_width="@dimen/muvi_player_icon_size"
+            android:layout_height="@dimen/muvi_player_icon_size"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/muvi_player_icon_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@drawable/muvi_player_round_cancel"
+            app:tint="@android:color/white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#121212"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Settings"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:background="#212121"
+            android:fontFamily="@font/semi_bold_font"
+            android:textColor="#EEEEEE" />
+
+        <LinearLayout
+            android:id="@+id/optionsLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="28dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/resolutionLinear"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/muvi_new_options_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:fontFamily="@font/bold_font"
+                    android:text="Resolution"
+                    android:textColor="@color/muvi_player_options_item_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvCurResolution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:fontFamily="@font/regular_font"
+                    android:text="Auto"
+                    android:textColor="@color/muvi_player_options_item_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/audioLinear"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/muvi_new_options_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:fontFamily="@font/bold_font"
+                    android:text="Audio"
+                    android:textColor="@color/muvi_player_options_item_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvCurAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:fontFamily="@font/regular_font"
+                    android:text="English"
+                    android:textColor="@color/muvi_player_options_item_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subLinear"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/muvi_new_options_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:fontFamily="@font/bold_font"
+                    android:text="Subtitles"
+                    android:textColor="@color/muvi_player_options_item_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvCurSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:fontFamily="@font/regular_font"
+                    android:text="English"
+                    android:textColor="@color/muvi_player_options_item_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settingsLinear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/muvi_new_options_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:fontFamily="@font/bold_font"
+                    android:text="Settings"
+                    android:textColor="@color/muvi_player_options_item_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detailsLinear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/muvi_new_options_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:fontFamily="@font/bold_font"
+                    android:text="Show Details"
+                    android:textColor="@color/muvi_player_options_item_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/optionsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="28dp"
+            android:listSelector="@drawable/muvi_new_options_item_bg"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>
